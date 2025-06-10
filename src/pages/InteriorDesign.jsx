@@ -149,11 +149,11 @@ const InteriorDesign = () => {
       description: "Our team coordinates with contractors and vendors to ensure flawless execution of the design vision.",
       icon: "fa-tools"
     },
-    { 
-      title: "Styling & Final Touches", 
-      description: "We complete the space with carefully curated accessories, artwork, and styling elements that bring the design to life.",
-      icon: "fa-magic"
-    }
+    // { 
+    //   title: "Styling & Final Touches", 
+    //   description: "We complete the space with carefully curated accessories, artwork, and styling elements that bring the design to life.",
+    //   icon: "fa-magic"
+    // }
   ];
 
   return (

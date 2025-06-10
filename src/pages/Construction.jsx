@@ -89,12 +89,12 @@ const Construction = () => {
       image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop',
       icon: 'fa-industry'
     },
-    {
-      title: 'Institutional Construction',
-      description: 'Schools, hospitals, and government buildings constructed with a focus on durability and public safety.',
-      image: 'https://images.unsplash.com/photo-1562516710-38a6fa229b23?q=80&w=2070&auto=format&fit=crop',
-      icon: 'fa-university'
-    }
+    // {
+    //   title: 'Institutional Construction',
+    //   description: 'Schools, hospitals, and government buildings constructed with a focus on durability and public safety.',
+    //   image: 'https://images.unsplash.com/photo-1562516710-38a6fa229b23?q=80&w=2070&auto=format&fit=crop',
+    //   icon: 'fa-university'
+    // }
   ];
 
   // Featured projects data

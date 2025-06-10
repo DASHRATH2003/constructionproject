@@ -181,7 +181,7 @@ const Services = () => {
       id: 'project-management',
       title: 'Project Management',
       description: 'Our experienced project managers oversee every aspect of your construction project, ensuring it progresses smoothly, stays on budget, and meets all quality standards.',
-      image: 'https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://mpmait.com/wp-content/uploads/2023/10/PM2.jpeg',
       features: [
         'Timeline development and management',
         'Budget oversight',

@@ -120,15 +120,15 @@ const About = () => {
               }}
             ></motion.div>
 
-            <motion.h1
+            <motion.h2
               variants={fadeIn}
               className="gradient-text"
               style={{
                 backgroundImage: `linear-gradient(to right, ${colorTheme.primary}, ${colorTheme.accent}, ${colorTheme.primary})`
               }}
             >
-              About Our Company
-            </motion.h1>
+              ABOUT OUR COMPANY
+            </motion.h2>
 
             <motion.p variants={fadeIn}>
               Discover the story, values, and expertise that make COBRIXA the premier choice for your construction needs.
@@ -795,40 +795,7 @@ const About = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              className="team-member"
-              variants={scaleIn}
-              whileHover={{ y: -10, boxShadow: '0 15px 30px rgba(0, 0, 0, 0.1)' }}
-            >
-              <div className="member-image-container">
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop" alt="Sarah Williams" />
-                <motion.div
-                  className="member-overlay"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="member-social">
-                    <a href="#" className="social-icon"><i className="fab fa-linkedin"></i></a>
-                    <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-                    <a href="#" className="social-icon"><i className="fas fa-envelope"></i></a>
-                  </div>
-                </motion.div>
-              </div>
-              <div className="member-info">
-                <h3>Sarah Williams</h3>
-                <p className="member-title" style={{ color: colorTheme.primary }}>Project Manager</p>
-                <p>Sarah excels at coordinating complex projects, ensuring they're completed on time and within budget while exceeding expectations.</p>
-                <motion.div
-                  className="member-accent"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: 50 }}
-                  transition={{ duration: 0.8, delay: 0.6 }}
-                  viewport={{ once: true }}
-                  style={{ background: colorTheme.primary }}
-                ></motion.div>
-              </div>
-            </motion.div>
+           
           </motion.div>
 
           {/* Team Stats */}
