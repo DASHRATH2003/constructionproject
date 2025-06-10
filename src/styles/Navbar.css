@@ -173,7 +173,7 @@
 }
 
 .dropdown-link {
-  color: white;
+  color: #0A3A5E;
   padding: 12px 20px;
   text-decoration: none;
   display: block;
@@ -192,12 +192,12 @@
   left: 20px;
   width: 0;
   height: 2px;
-  background-color: #0A3A5E;
+  background-color: yellow;
   transition: width 0.3s ease;
 }
 
 .dropdown-link:hover {
-  color: #0A3A5E;
+  color: yellow;
 }
 
 .dropdown-link:hover::after {
