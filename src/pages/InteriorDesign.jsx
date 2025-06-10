@@ -89,12 +89,7 @@ const InteriorDesign = () => {
       image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop',
       icon: 'fa-concierge-bell'
     },
-    {
-      title: 'Retail Space Design',
-      description: 'Craft engaging retail environments that enhance customer experience and drive sales.',
-      image: 'https://images.unsplash.com/photo-1604176424472-9d7e10d1f3cc?q=80&w=2069&auto=format&fit=crop',
-      icon: 'fa-shopping-bag'
-    }
+   
   ];
 
   // Featured projects data
@@ -149,11 +144,11 @@ const InteriorDesign = () => {
       description: "Our team coordinates with contractors and vendors to ensure flawless execution of the design vision.",
       icon: "fa-tools"
     },
-    // { 
-    //   title: "Styling & Final Touches", 
-    //   description: "We complete the space with carefully curated accessories, artwork, and styling elements that bring the design to life.",
-    //   icon: "fa-magic"
-    // }
+    { 
+      title: "Styling & Final Touches", 
+      description: "We complete the space with carefully curated accessories, artwork, and styling elements that bring the design to life.",
+      icon: "fa-magic"
+    }
   ];
 
   return (
