@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import SocialMediaButtons from './components/SocialMediaButtons';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -58,6 +59,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+        <SocialMediaButtons />
         <Footer />
       </div>
     </Router>
