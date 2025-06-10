@@ -5,7 +5,7 @@ const SocialMediaButtons = () => {
   const socialLinks = [
     {
       icon: <FaPhone />,
-      href: "tel:+YOUR_PHONE_NUMBER", // Replace with your actual phone number
+      href: "tel:+91 87627 85555", // Replace with your actual phone number
       label: "Call us"
     },
     {
@@ -20,7 +20,7 @@ const SocialMediaButtons = () => {
     },
     {
       icon: <FaWhatsapp />,
-      href: "https://wa.me/YOUR_WHATSAPP_NUMBER", // Replace with your WhatsApp number
+      href: "+91 87627 85555", // Replace with your WhatsApp number
       label: "WhatsApp"
     }
   ];
@@ -35,7 +35,7 @@ const SocialMediaButtons = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={`
-                bg-[rgb(73,101,69)]
+                bg-[rgb(56,75,54)]
                 text-white
                 w-[50px] h-[50px]
                 flex items-center justify-center
@@ -44,7 +44,7 @@ const SocialMediaButtons = () => {
                 transition-all duration-300
                 hover:bg-[hsl(0,0%,0%)]
                 relative
-                border-2 border-[rgb(19,135,71)]
+                border-2 border-[rgb(71,102,85)]
               `}
               aria-label={link.label}
             >

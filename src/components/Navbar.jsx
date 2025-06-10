@@ -5,14 +5,22 @@ import { motion } from 'framer-motion';
 import '../styles/Navbar.css';
 import logo from '../assets/images/logo.jpeg';
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    if (!isOpen) {
+      setIsServicesOpen(false);
+    }
+  };
+
+  const toggleServices = (e) => {
+    e.preventDefault();
+    setIsServicesOpen(!isServicesOpen);
   };
 
   useEffect(() => {
@@ -32,6 +40,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsOpen(false);
+    setIsServicesOpen(false);
   }, [location]);
 
   const navbarVariants = {
@@ -122,7 +131,7 @@ const Navbar = () => {
 
           {/* Services link with dropdown */}
           <motion.li
-            className="nav-item dropdown"
+            className={`nav-item dropdown ${isServicesOpen ? 'services-open' : ''}`}
             key="/services"
             custom={2}
             variants={navItemVariants}
@@ -132,10 +141,11 @@ const Navbar = () => {
             <Link
               to="/services"
               className={location.pathname === "/services" ? "nav-links active" : "nav-links"}
+              onClick={toggleServices}
             >
-              Services <i className="fas fa-chevron-down dropdown-icon"></i>
+              Services <i className={`fas fa-chevron-down dropdown-icon ${isServicesOpen ? 'rotated' : ''}`}></i>
             </Link>
-            <ul className="dropdown-menu">
+            <ul className={`dropdown-menu ${isServicesOpen ? 'show' : ''}`}>
               <li>
                 <Link to="/construction" className="dropdown-link">
                   Construction
