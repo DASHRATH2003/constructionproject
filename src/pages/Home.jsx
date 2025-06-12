@@ -5,6 +5,7 @@ import { useRef, useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import ServiceVideos from '../components/ServiceVideos';
 import '../styles/Home.css';
+import constructionImage from '../assets/image52.jpeg';
 
 const Home = () => {
   // Refs for scroll animations
@@ -317,7 +318,7 @@ const Home = () => {
             >
               <div className="relative overflow-hidden rounded-lg shadow-xl">
                 <motion.img
-                  src={showcaseImages.rightSideImage}
+                  src={constructionImage}
                   alt="COBRIXA Construction Excellence"
                   className="w-full h-[500px] object-cover"
                   whileHover={{ scale: 1.05 }}
@@ -571,108 +572,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-white" ref={testimonialsRef}>
-        <div className="container mx-auto px-4">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.7 }}
-          >
-            <h2 className="text-4xl font-bold text-[#0A3A5E] mb-4">Client Testimonials</h2>
-            <div className="w-20 h-1 bg-[#0A3A5E] mx-auto mb-6"></div>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Hear what our valued clients have to say about their experience working with COBRIXA
-            </p>
-          </motion.div>
-
-          {/* Testimonial Slider */}
-          <div className="max-w-4xl mx-auto relative">
-            {/* Main Testimonial */}
-            <div className="relative h-[400px] overflow-hidden">
-              <AnimatePresence initial={false} custom={direction}>
-                <motion.div
-                  key={currentTestimonial}
-                  custom={direction}
-                  variants={sliderVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={{
-                    x: { type: "spring", stiffness: 300, damping: 30 },
-                    opacity: { duration: 0.5 }
-                  }}
-                  className="absolute w-full"
-                >
-                  <div className="bg-gray-50 p-8 rounded-lg shadow-lg border-l-4 border-[#0A3A5E]">
-                    <div className="mb-4">
-                      {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                        <i key={i} className="fas fa-star text-[#F59E0B]"></i>
-                      ))}
-                    </div>
-                    <p className="text-gray-700 mb-8 italic text-xl leading-relaxed">"{testimonials[currentTestimonial].quote}"</p>
-                    <div className="flex items-center">
-                      <img
-                        src={testimonials[currentTestimonial].image}
-                        alt={testimonials[currentTestimonial].name}
-                        className="w-16 h-16 rounded-full mr-4 object-cover border-2 border-[#0A3A5E]"
-                      />
-                      <div>
-                        <h4 className="font-bold text-[#0A3A5E] text-lg">{testimonials[currentTestimonial].name}</h4>
-                        <p className="text-gray-600">{testimonials[currentTestimonial].position}</p>
-                        <p className="text-sm text-gray-500">{testimonials[currentTestimonial].project}</p>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* Navigation Arrows */}
-            <div className="flex justify-between absolute top-1/2 left-0 right-0 -mt-6 px-4">
-              <motion.button
-                className="bg-white p-3 rounded-full shadow-lg text-[#0A3A5E] focus:outline-none"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => {
-                  setDirection(-1);
-                  setCurrentTestimonial(prev => (prev === 0 ? testimonials.length - 1 : prev - 1));
-                }}
-              >
-                <i className="fas fa-chevron-left"></i>
-              </motion.button>
-
-              <motion.button
-                className="bg-white p-3 rounded-full shadow-lg text-[#0A3A5E] focus:outline-none"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                onClick={() => {
-                  setDirection(1);
-                  setCurrentTestimonial(prev => (prev === testimonials.length - 1 ? 0 : prev + 1));
-                }}
-              >
-                <i className="fas fa-chevron-right"></i>
-              </motion.button>
-            </div>
-
-            {/* Dots Indicator */}
-            <div className="flex justify-center mt-8">
-              {testimonials.map((_, index) => (
-                <motion.button
-                  key={index}
-                  className={`mx-1 rounded-full focus:outline-none ${index === currentTestimonial ? 'w-3 h-3 bg-[#0A3A5E]' : 'w-2 h-2 bg-gray-300'}`}
-                  whileHover={{ scale: 1.2 }}
-                  onClick={() => {
-                    setDirection(index > currentTestimonial ? 1 : -1);
-                    setCurrentTestimonial(index);
-                  }}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+  
 
       {/* CTA Section */}
       <section className="py-20 bg-[#0A3A5E] text-white">

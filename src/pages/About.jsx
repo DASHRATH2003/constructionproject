@@ -664,139 +664,8 @@ const About = () => {
         }}
       >
         <div className="container">
-          <motion.div
-            className="section-title"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <motion.div
-              className="accent-line"
-              initial={{ width: 0 }}
-              whileInView={{ width: 80 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
-              style={{ background: colorTheme.primary }}
-            ></motion.div>
-            <h2>Our Leadership Team</h2>
-            <p className="section-subtitle">Meet the experts behind COBRIXA's success</p>
-          </motion.div>
+          
 
-          <motion.div
-            className="team-grid"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <motion.div
-              className="team-member"
-              variants={scaleIn}
-              whileHover={{ y: -10, boxShadow: '0 15px 30px rgba(0, 0, 0, 0.1)' }}
-            >
-              <div className="member-image-container">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop" alt="John Doe" />
-                <motion.div
-                  className="member-overlay"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="member-social">
-                    <a href="#" className="social-icon"><i className="fab fa-linkedin"></i></a>
-                    <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-                    <a href="#" className="social-icon"><i className="fas fa-envelope"></i></a>
-                  </div>
-                </motion.div>
-              </div>
-              <div className="member-info">
-                <h3>John Doe</h3>
-                <p className="member-title" style={{ color: colorTheme.primary }}>Founder & CEO</p>
-                <p>With 30 years of construction experience, John leads our company with vision and expertise in residential and commercial projects.</p>
-                <motion.div
-                  className="member-accent"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: 50 }}
-                  transition={{ duration: 0.8 }}
-                  viewport={{ once: true }}
-                  style={{ background: colorTheme.primary }}
-                ></motion.div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="team-member"
-              variants={scaleIn}
-              whileHover={{ y: -10, boxShadow: '0 15px 30px rgba(0, 0, 0, 0.1)' }}
-            >
-              <div className="member-image-container">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" alt="Jane Smith" />
-                <motion.div
-                  className="member-overlay"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="member-social">
-                    <a href="#" className="social-icon"><i className="fab fa-linkedin"></i></a>
-                    <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-                    <a href="#" className="social-icon"><i className="fas fa-envelope"></i></a>
-                  </div>
-                </motion.div>
-              </div>
-              <div className="member-info">
-                <h3>Jane Smith</h3>
-                <p className="member-title" style={{ color: colorTheme.primary }}>Chief Operations Officer</p>
-                <p>Jane ensures that every project runs smoothly from start to finish, with a focus on client communication and team coordination.</p>
-                <motion.div
-                  className="member-accent"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: 50 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  style={{ background: colorTheme.primary }}
-                ></motion.div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="team-member"
-              variants={scaleIn}
-              whileHover={{ y: -10, boxShadow: '0 15px 30px rgba(0, 0, 0, 0.1)' }}
-            >
-              <div className="member-image-container">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop" alt="Mike Johnson" />
-                <motion.div
-                  className="member-overlay"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="member-social">
-                    <a href="#" className="social-icon"><i className="fab fa-linkedin"></i></a>
-                    <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-                    <a href="#" className="social-icon"><i className="fas fa-envelope"></i></a>
-                  </div>
-                </motion.div>
-              </div>
-              <div className="member-info">
-                <h3>Mike Johnson</h3>
-                <p className="member-title" style={{ color: colorTheme.primary }}>Lead Architect</p>
-                <p>Mike brings creative design solutions to every project we undertake, with a specialty in sustainable and innovative architecture.</p>
-                <motion.div
-                  className="member-accent"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: 50 }}
-                  transition={{ duration: 0.8, delay: 0.4 }}
-                  viewport={{ once: true }}
-                  style={{ background: colorTheme.primary }}
-                ></motion.div>
-              </div>
-            </motion.div>
-
-           
-          </motion.div>
 
           {/* Team Stats */}
           <motion.div
@@ -814,7 +683,7 @@ const About = () => {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <h3>25+</h3>
+                <h3>10+</h3>
                 <p>Team Members</p>
               </motion.div>
 
